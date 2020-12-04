@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+    background: #C7E7ED;
+    color: #fff;
+    font-family: var(--font);
+}
+.header {
+    text-align: center;
+    padding: 24px 0;
+    background: #C7E7ED;
+    color: #156A89;
+    letter-spacing: 2px;
+}
+.outerContainer {
+    margin: auto;
+    width: 90%;
+    border: 1px solid #156a8973;
+    /* padding: 25px 0; */
+    border-radius: 6px;
+    background: #fff;
+    
+    box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 12px 0px rgb(10 7 7 / 22%) inset;
+    -moz-box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
+}
+@media screen and (min-width: 576px) {
+    .outerContainer {
+        width: 60%;
+    }
+}
+.innerContainer {
+    margin:22px  auto;
+    width: 90%;
+    color: #156A89;
+}
+.intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.minuteTest, 
+.textSentencesWords {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 14px auto;
+    border: 1px solid #156a8973;
+    border-radius: 5px;
+    
+}
+@media screen and (min-width: 576px) {
+    .minuteTest, 
+    .textSentencesWords {
+        width: 81%;
+    }
+}
+.numberOfMinuteTest,
+.storyToType {
+    padding: 10px 0;
+    cursor: pointer;
+    width: 33.33%;
+    text-align: center;
+}
+.numberOfMinuteTest:hover,
+.storyToType:hover {
+    background: #2A8FB4;
+    color: #01374b;
+}
+#oneMinuteTest,
+#threeMinuteTest,
+#text,
+#sentences {
+    border-right: 1px solid #156a8973;
+}
+#oneMinuteTest,
+#text {
+    color: #fff;
+    background: #2A8FB4;
+}
+.backgroundStartTypingButton {
+    background: #d4caca61;
+    height: 15vh;
+    position: relative;
+    margin-top: 50px;
+}
+.startTypingButton {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    font-size: 1rem;
+    border: 4px solid #fff;
+    border-radius: 5px;
+    background: #FF9C00;
+    color: #fff;
+    cursor: pointer;
+}
+.startTypingButton:hover {
+    background: #be7908;
+}
+.givenText {
+    color: #000;
+    line-height: 1.4rem;
+}
+.userTextTypingContainer {
+    background: #d4caca61;
+    /* min-height: 20vh; */
+    padding: 10px 30px;
+    color: #000;
+    line-height: 1.4rem;
+}
+.userTextTypingContainer:focus {
+    /* outline: none; */
+}
+.userTextTyping {
+    min-height: 20vh;
+    border: none;
+    margin: 0 auto -4px auto;
+}
+.userTextTyping:focus {
+    outline: none;
+}
+.timerErrorsContainer {
+    width: 80%;
+    margin: 16px auto;
+}
+@media screen and (min-width: 576px) {
+    .timerErrors {
+        width: 60%;
+        margin: 16px auto;
+    }
+}
+.timerErrors {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    color: #4747A3;
+}
+.timerBox .timer,
+.errorsBox .count{
+    border: 1px solid #156a8973;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px auto;
+    background: #fff;
+    box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 12px 0px rgb(10 7 7 / 22%) inset;
+    -moz-box-shadow: 10px 10px 7px 1px rgba(0,0,0,0.75);
+    text-align: center;
+}
+.errorsBox .msg {
+    color: #000;
+}
